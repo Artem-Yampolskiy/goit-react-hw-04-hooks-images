@@ -1,0 +1,17 @@
+import PropTypes from 'prop-types';
+import styles from './Button.module.css';
+
+
+const Button = ({ onClick }) => (
+    <div className={styles.btnContainer}>
+        <button className={styles.btn} type='button' onClick={onClick}>
+            Load more
+        </button>
+    </div>
+);
+
+Button.propTypes = {
+    onClick: PropTypes.func.isRequired,
+};
+
+export default Button;
